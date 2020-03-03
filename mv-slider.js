@@ -24,7 +24,7 @@ export class MvSlider extends LitElement {
     return css`
       :host {
         --font-family: var(--mv-slider-font-family, MuseoSans);
-				--font-size: var(--font-size-m, 16px);
+        --font-size: var(--font-size-m, 16px);
         --track-light-background: var(--mv-slider-track-light-background, linear-gradient(to left, #F01F14, #00F2FE));
         --track-dark-background: var(--mv-slider-track-dark-background);
         --light-color: var(--mv-slider-light-color, #818181);
@@ -145,11 +145,11 @@ export class MvSlider extends LitElement {
         color:  var(--color, #A9A9A9);
       }
       
-       mv-tooltip {
-         --mv-tooltip-min-width: 47px;
-         --mv-tooltip-height: 26px;
-         --font-size-m: 13px;
-         --mv-tooltip-border: var(--tooltip-border);
+      mv-tooltip {
+        --mv-tooltip-min-width: 47px;
+        --mv-tooltip-height: 26px;
+        --font-size-m: 13px;
+        --mv-tooltip-border: var(--tooltip-border);
       }
       
       .thumb2 {
