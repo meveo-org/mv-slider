@@ -23,10 +23,6 @@ export class MvSliderDemo extends LitElement {
         --mv-container-padding: 20px 30px; 
       }
        
-      h3 {
-        color: #A9A9A9;
-      }
-       
       fieldset > label, label > input {
         cursor: pointer;
       }
@@ -35,9 +31,9 @@ export class MvSliderDemo extends LitElement {
         width: 120px;
         margin-left: 10px;
         border:2px solid red;
-        -moz-border-radius:8px;
-        -webkit-border-radius:8px;	
-        border-radius:8px;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;	
+        border-radius: 8px;
         color: #818181;
       }
       
@@ -54,38 +50,35 @@ export class MvSliderDemo extends LitElement {
   }
 
   render() {
+    const { theme } = this;
     return html`
       <fieldset>
         <legend>Theme</legend>
-        <label><input type="radio" name="theme" value="light" @change="${this.radioChange}" />Light</label>
-        <label><input type="radio" name="theme" value="dark" checked @change="${this.radioChange}" />Dark</label>
+        <label><input type="radio" name="theme" value="light" @change="${this.changeTheme}" />Light</label>
+        <label><input type="radio" name="theme" value="dark" checked @change="${this.changeTheme}" />Dark</label>
       </fieldset>
-      <mv-container .theme="${this.theme}">
+      <mv-container .theme="${theme}">
         <h3>Default</h3>
         <mv-slider 
-          .theme="${this.theme}"
+          .theme="${theme}"
           max="100"
         ></mv-slider>
       </mv-container>
       
-      <mv-container .theme="${this.theme}">
+      <mv-container .theme="${theme}">
         <h3>Double</h3>
         <mv-slider 
           type="double" 
-          .theme="${this.theme}"
+          .theme="${theme}"
           max="12.7"
         ></mv-slider>
       </mv-container>
     `;
   }
 
-  radioChange = originalEvent => {
+  changeTheme = originalEvent => {
     const { target: { value } } = originalEvent;
-    if (value === "light") {
-      this.theme = "light";
-    } else {
-      this.theme = "dark";
-    }
+    this.theme = value;
   };
 }
 

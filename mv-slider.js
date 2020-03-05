@@ -23,8 +23,8 @@ export class MvSlider extends LitElement {
   static get styles() {
     return css`
       :host {
-        --font-family: var(--mv-slider-font-family, MuseoSans);
-        --font-size: var(--font-size-m, 16px);
+        --mv-slider-font-family: var(--font-family, MuseoSans);
+        --mv-slider-font-size: var(--font-size-m, 16px);
         --track-light-background: var(--mv-slider-track-light-background, linear-gradient(to left, #F01F14, #00F2FE));
         --track-dark-background: var(--mv-slider-track-dark-background);
         --light-color: var(--mv-slider-light-color, #818181);
@@ -40,8 +40,8 @@ export class MvSlider extends LitElement {
       }
       
       .slider {
-        font-family: var(--font-family);
-        font-size: var(--font-size);
+        font-family: var(--mv-slider-font-family);
+        font-size: var(--mv-slider-font-size);
         position: relative;
         width: var(--width, 324px);
         height: var(--height, 7px);
@@ -148,7 +148,7 @@ export class MvSlider extends LitElement {
       mv-tooltip {
         --mv-tooltip-min-width: 47px;
         --mv-tooltip-height: 26px;
-        --font-size-m: 13px;
+        --mv-tooltip-content-font-size: var(--mv-slider-font-size);
         --mv-tooltip-border: var(--tooltip-border);
       }
       
