@@ -25,10 +25,11 @@ dark, light
 
 ```html
 <mv-slider 
-	width="300"					//custom width
-  type="double" 					//custom type
-  theme="light"						//custom theme
-  max="12.7"						//custom value max
+  width="300"                           //the width for the slider
+  type="double"                         //use the default or double slider
+  .theme="${theme}"                     //toggle the light and dark theme mode
+  max="12.7"                            //the max value for the slider
+  @silder-change="${this.changeValue}"  //custom event dispatched when the silder value is changed
 ></mv-slider>    
 ```
 
