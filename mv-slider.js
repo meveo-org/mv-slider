@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit-element";
-import "mv-tooltip";
+import "@meveo-org/mv-tooltip";
 
 export class MvSlider extends LitElement {
   static get properties() {

@@ -1,0 +1,25 @@
+{
+  "name": "@meveo-org/mv-slider",
+  "version": "1.0.0",
+  "description": "MvSlider is a Meveo slider component based on lit-element.",
+  "main": "mv-slider.js",
+  "scripts": {
+    "serve": "es-dev-server --node-resolve --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meveo-org/mv-slider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meveo-org/mv-slider/issues"
+  },
+  "homepage": "https://github.com/meveo-org/mv-slider#readme",
+  "dependencies": {
+    "@meveo-org/mv-tooltip": "^1.0.0"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.46.1"
+  }
+}
