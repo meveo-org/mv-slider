@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit-element";
-import "mv-container";
+import "@meveo-org/mv-container";
 import "./mv-slider.js";
 
 export class MvSliderDemo extends LitElement {
