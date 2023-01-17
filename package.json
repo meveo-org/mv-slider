@@ -1,6 +1,6 @@
 {
   "name": "@meveo-org/mv-slider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MvSlider is a Meveo slider component based on lit-element.",
   "main": "mv-slider.js",
   "scripts": {
